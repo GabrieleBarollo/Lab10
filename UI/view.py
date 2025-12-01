@@ -31,7 +31,7 @@ class View:
 
         # Guadagno Medio Minimo
         self.guadagno_medio_minimo = ft.TextField(label="Guadagno medio minimo (€)", width=300)
-        pulsante_analizza = ft.ElevatedButton(text="Analizza Hub",
+        self.pulsante_analizza = ft.ElevatedButton(text="Analizza Hub",
                                               on_click=self.controller.mostra_tratte)
 
         # Visualizzazione mediante ListView
@@ -49,7 +49,7 @@ class View:
             ft.Divider(),
 
             # Sezione 2
-            ft.Row([self.guadagno_medio_minimo, pulsante_analizza], alignment=ft.MainAxisAlignment.CENTER, spacing=20),
+            ft.Row([self.guadagno_medio_minimo, self.pulsante_analizza], alignment=ft.MainAxisAlignment.CENTER, spacing=20),
             ft.Divider(),
 
             # Sezione 3
